@@ -1,0 +1,31 @@
+nav li{
+    padding: 12px;
+    margin: 5px;
+    background: rgb(206, 206, 206);
+}
+
+nav li a {
+    text-decoration: none;
+}
+
+.active{
+    background-color:lavender;
+    font-weight: bold;
+    text-decoration: underline overline;
+    border: 2px solid rgb(150, 68, 68);
+}
+
+img {
+    margin: 24px;
+    width: 325px;
+    border: 8px solid lavender;
+    padding: 10px;
+    transition: .5s ease;
+}
+
+img:hover{
+    box-shadow: 0 0 0 10px orangered;
+    transition: .5s ease;
+}
+
+
