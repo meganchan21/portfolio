@@ -1,3 +1,4 @@
+/* 1 checkpoint */
 nav li{
     padding: 12px;
     margin: 5px;
@@ -8,7 +9,7 @@ nav li a {
     text-decoration: none;
 }
 
-.active{
+.active {
     background-color:lavender;
     font-weight: bold;
     text-decoration: underline overline;
@@ -23,9 +24,41 @@ img {
     transition: .5s ease;
 }
 
-img:hover{
+img:hover {
     box-shadow: 0 0 0 10px orangered;
     transition: .5s ease;
 }
 
+/* in class notes: grid */
 
+/* .grid-container{
+    margin: 24px 0 px;
+    display
+    grid template columns
+    gap
+} */
+/* 
+.grid-container img {
+    object-fit: cover;
+    width: 300;
+    height: 300;
+    justify-self: center;
+} */
+/* make sure it looks different for mobile, tablet, and desktop view */
+
+/* flexbox in class notes */
+/* make sure it looks different for mobile, tablet, and desktop view */
+
+/* .flexbox-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+}
+
+.flexbox-container img {
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+    justify-self: center;
+} */
