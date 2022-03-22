@@ -29,27 +29,30 @@ img:hover {
     transition: .5s ease;
 }
 
+/* 2nd chrckpoint */
+
 /* in class notes: grid */
 
-/* .grid-container{
+.gallery {
     margin: 24px 0 px;
-    display
-    grid template columns
-    gap
-} */
-/* 
-.grid-container img {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.gallery img {
     object-fit: cover;
     width: 300;
     height: 300;
     justify-self: center;
-} */
+}
+
 /* make sure it looks different for mobile, tablet, and desktop view */
 
 /* flexbox in class notes */
 /* make sure it looks different for mobile, tablet, and desktop view */
 
-/* .flexbox-container{
+.flexbox-container{
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
@@ -61,4 +64,4 @@ img:hover {
     width: 300px;
     height: 300px;
     justify-self: center;
-} */
+}
