@@ -211,6 +211,11 @@ p{
     justify-content: center;
 }
 
+.ff_gallery{
+    display:grid;
+    justify-content: center;
+}
+
 /* animated button 'submit!!' */
 .button {
     border-radius: 0 0 0.2em 0.2em;
