@@ -7,58 +7,80 @@
     <link rel="icon" href="images/mcfavicon.png">
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- javascript -->
+    <!-- <script src="code.js"></script> -->
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/bd4b741a20.js" crossorigin="anonymous"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-MN6LHMGTNQ"></script>
     <script>
      window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-MN6LHMGTNQ');
     </script>
+
     <title>Projects</title>
 </head>
 
 <body>
+    <a class="skip" href="#main">
+        Skip to content
+    </a>
 	<header>
-        <a class="skip-to-content-link" href="#main">
-            Skip to content 
-        </a>
 	  <nav>
-		<ul>
+		<ul class = "nav_links">
 			<li class="active"> <a href = "index.html">Projects</a></li>
-            <li><a href = "collaboreat.html">collaborEAT</a></li>
+            <li><a href = "collaboreat.html">collaboreat</a></li>
 			<li><a href = "ferndalefire.html">Firefighter Right-to-Know</a></li>
 			<li><a href = "destination.html">UX Festival Slo Hackathon</a></li>
+            <li><a href = "contact.html">Contact</a></li>
 		</ul>
 	  </nav>
-	  <h1>Projects</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h3 class="animate-charcter">Hello! I'm Megan.</h3>
+          </div>
+        </div>
+      </div>
 	</header>
-<main>
-    <h1>Hello, My name is Megan Chan.</h1>
-        <p>Everything related to inclusive design, multimodal interaction, and personalized experiences excites me. I am always looking for new opportunities to learn and do good.</p>
-        <br>
-        <br>
-
-        <p>My name is Megan and I am an MS Information student focusing on Human-Computer Interaction at the University of Michigan, Ann Arbor.</p>
-        <br>
-        <br>
+<main id = "main">
+        <p>Everything related to inclusive design, multimodal interaction, and personalized experiences excites me. I am always looking for new opportunities to learn and do good. My name is Megan and I am an MS Information student focusing on Human-Computer Interaction at the University of Michigan, Ann Arbor.</p>
 
         <p>After interning in the technology industry for the past four years, I found a deep appreciation for technological designs that are usable, accessible, and impactful. I always welcome new opportunities to learn and grow, so feel free to contact me if you have any interesting projects or ideas.</p>
-        <br>
-        <br>
 
         <p>Outside of school and work, I enjoy reading, knitting, and making pottery. Music is also a big part of my life and in my free time, I play around with the piano, guitar, and violin.</p>
 
-        <img src = "images/index/collaboreatmockup.png" alt= "iPad on a kitchen counter device holder opened to the collaborEAT app" width="200"/>
-        <img src = "images/index/ferndalefirecover.jpeg" alt="two firefighters looking at a smart phone" width="200"/>
-        <img src = "images/index/destinationmockup.png" alt="iPhone opened to the Destination app resting on a table" width="200"/>
+        <p>View my projects below!</p>
+
+    <div class = index_gal>
+
+        <div class = 'collaboreat_mockup'>
+            <h1>collaboreat</h1>
+            <img src = "images/index/collaboreatmockup.png" alt= "iPad on a kitchen counter device holder opened to the collaborEAT app" width="200"/>
+        </div>
+
+        <div class = 'firefighter_rtk'>
+            <h1>Firefighter Right-to-Know</h1>
+            <img src = "images/index/ferndalefirecover.jpeg" alt="two firefighters looking at a smart phone" width="200"/>
+        </div>
+
+        <div class = 'destination'>
+            <h1>destination</h1>
+            <img src = "images/index/destinationmockup.png" alt="iPhone opened to the Destination app resting on a table" width="200"/>
+    </div>
     </main>
-    
+
     <footer>
+        <a href="https://www.linkedin.com/in/megan-chan2/" target="_blank" class="linkedin"> <i class="fa-brands fa-linkedin fa-2x"></i></a>
+        <a href="mailto:meganchan321@gmail.com" target="_blank" class="email"> <i class="fa-solid fa-envelope fa-2x"></i></a>
         <p>Megan Chan &copy; 2022</p>
     </footer>
 </body>
 </html>
-    
-    

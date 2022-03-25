@@ -1,8 +1,18 @@
 /* 1 checkpoint */
-nav li{
-    padding: 12px;
+
+/* nav */
+/* flex */
+.nav_links{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
     margin: 5px;
-    background: rgb(206, 206, 206);
+    background: #ebeaea;
+    justify-content: flex-end;
+}
+
+li{
+    padding: 20px;
 }
 
 nav li a {
@@ -12,10 +22,11 @@ nav li a {
 .active {
     background-color:lavender;
     font-weight: bold;
-    text-decoration: underline overline;
-    border: 2px solid rgb(150, 68, 68);
+    text-decoration: underline;
+    border: 7px solid rgb(150, 68, 68);
 }
 
+/* images border and hover */
 img {
     margin: 24px;
     width: 325px;
@@ -29,39 +40,313 @@ img:hover {
     transition: .5s ease;
 }
 
-/* 2nd chrckpoint */
+/* 2nd checkpoint */
 
-/* in class notes: grid */
-
-.gallery {
-    margin: 24px 0 px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+/* flex */
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.gallery img {
-    object-fit: cover;
-    width: 300;
-    height: 300;
-    justify-self: center;
+/* #logo{
+    border: none;
+    width: 150px;
+    align-self: center;
+} */
+
+/* #logo:hover{
+    border: none
+} */
+
+/* skip to main */
+a.skip{
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: left 1s ease-out;
+    z-index: 1;
+    position: relative;
+    left: -500px;
 }
 
-/* make sure it looks different for mobile, tablet, and desktop view */
+a.skip:focus{
+    position: relative;
+    left: 0px;
+    top: 20px;
+    outline: none;
+    text-decoration: underline overline 4px blue;
+}
 
-/* flexbox in class notes */
-/* make sure it looks different for mobile, tablet, and desktop view */
+/* body style */
+body{
+    background-color:#ebeaea;
+    margin: 5px;
+    padding: 0;
+    font-size: 16pt; /* test for this! Make all sizes em or rem */
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
 
-.flexbox-container{
+/* footer style */
+footer{
+    background-color: black;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+/* icons in footer */
+/* not working */
+.email:visited{
+    color: white;
+}
+
+.linkedin:visited{
+    color: white;
+}
+
+/* summary for ux fest */
+details{
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: .5em .5em 0;
+}
+summary{
+    font-size: 1.5em;
+    margin: -.5em -.5em 0;
+    padding: .5em;
+}
+
+details[open] {
+    padding: .5em;
+}
+
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: .5em;
+}
+
+/* h1, h2, p */
+h1{
+    font-size: 2em;
+    text-align: center;
+    line-height: 60px;
+    padding: 20px;
+}
+
+h2{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+p{
+    padding: 30px;
+    line-height: 33px;
+    font-size: 1.1em;
+}
+
+/*3 line headings for each page + bkgnd img plx*/
+.heading{
+    line-height: 50px;
+    margin-bottom: 50px;
+    background-color: #707070;
+    background-image: url("../images/postit.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: bold;
+}
+
+/* gallery for collaboreat/ff rtk */
+/* flex */
+
+#gallery{
+    margin-top: 50px;
+    font-weight: bold;
+
+}
+.gallery{
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
     justify-content: center;
 }
 
-.flexbox-container img {
+.gallery img {
+    object-fit: cover;
+    justify-self: center;
+}
+
+/* gallery for index */
+/* flex */
+.index_gal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.index_gal img {
+    object-fit: cover;
+    width: 400px;
+    height: 400px;
+    justify-self: center;
+}
+
+/* gallery for destination */
+/* grid */
+.uxfest_gal{
+    display: grid;
+    justify-content: center;
+}
+
+/* animated button 'submit!!' */
+.button {
+    background: linear-gradient(top, #555, #333);
+    border-radius: 0 0 0.2em 0.2em;
+    color: #fff;
+    font-size: 1.5em;
+  }
+
+.button {
+    animation: wiggle 2s linear infinite;
+  }
+  /* Keyframes */
+  @keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }
+
+/* animation home page */
+.animate-charcter{
+    background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 5s linear infinite;
+  display: inline-block;
+  font-size: 6em;
+  text-align: center;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* styles for form */
+form{
+    margin: 0px 150px 150px 150px;
+}
+
+legend{
+    font-size: 125%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+label{
+    display: inline-block;
+    margin-right:10px;
+    width:15%;
+}
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+span{
+    margin-left:20%;
+    font-family: italic;
+    font-weight: bold;
+}
+
+textarea{
+    width: 100%;
+    height: 35vh;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type=checkbox]{
+    display:inline;
+    width:inherit;
+}
+
+input[type=submit] {
+    background-color: purple;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+input[type=submit]:hover {
+    opacity: 0.8;
+}
+
+/* RANDOM NOTES BELOW*/
+
+/* @media screen and (min-width: 900px){
+} */
+
+/* in class notes: grid */
+
+/* .gallery {
+    margin: 24px 0 px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.gallery img {
     object-fit: cover;
     width: 300px;
     height: 300px;
     justify-self: center;
-}
+} */
+
+/* make sure it looks different for mobile, tablet, and desktop view */
+
+/* flexbox in class notes */
+/* make sure it looks different for mobile, tablet, and desktop view */
