@@ -23,7 +23,6 @@ li{
 
 nav li a {
     text-decoration: none;
-    
 }
 
 .active {
@@ -149,7 +148,7 @@ h2{
 p{
     padding: 30px;
     line-height: 33px;
-    font-size: 1.1em;
+    font-size: .9em;
 }
 
 /*3 line headings for each page + bkgnd img plx*/
@@ -263,7 +262,7 @@ p{
   -webkit-text-fill-color: transparent;
   animation: textclip 5s linear infinite;
   display: inline-block;
-  font-size: 6em;
+  font-size: 4em;
   text-align: center;
 }
 
