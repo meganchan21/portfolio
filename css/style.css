@@ -4,10 +4,9 @@
 /* flex */
 .nav_links{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding: 20px;
     margin: 5px;
-    background: #ebeaea;
     justify-content: space-between;
     color: #231557;
 }
@@ -19,10 +18,12 @@
 
 li{
     padding: 20px;
+    background-color: lightgray;
 }
 
 nav li a {
     text-decoration: none;
+    
 }
 
 .active {
