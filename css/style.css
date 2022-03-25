@@ -1,3 +1,6 @@
+@-ms-viewport{
+    width: device-width;
+}
 /* 1 checkpoint */
 
 /* nav */
@@ -326,6 +329,18 @@ input[type=submit] {
 
 input[type=submit]:hover {
     opacity: 0.8;
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+
+.button{
+    animation: none;
+}
+
+.animate-charcter{
+    animation: none;
+}
+
 }
 
 /* RANDOM NOTES BELOW*/
