@@ -29,7 +29,7 @@ nav li a {
 .active {
     background-color:lavender;
     font-weight: bold;
-    text-decoration: bold;
+    text-decoration: wavy underline;
     border: 7px solid rgb(176, 62, 62);
 }
 
