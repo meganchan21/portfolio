@@ -29,7 +29,7 @@ nav li a {
 .active {
     background-color:lavender;
     font-weight: bold;
-    text-decoration: underline;
+    text-decoration: bold;
     border: 7px solid rgb(176, 62, 62);
 }
 
@@ -174,8 +174,8 @@ p{
 .gallery img {
     justify-self: center;
     object-fit: cover;
-    width: 500px;
-    height: 300px;
+    width: 400px;
+    height: 200px;
 }
 
 /* gallery for index */
@@ -449,8 +449,19 @@ li{
     animation: none;
 }
 
+.flip_back {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(176, 62, 62);
+    color: white;
+    transform: none;
+}
 
-
+.flipcard:hover .flip_inner, .flipcard:focus, .flipcard:focus-within .flip_inner {
+    transform: none;
+}
 
 }
 
