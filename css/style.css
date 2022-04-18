@@ -30,15 +30,12 @@ nav li a {
     background-color:lavender;
     font-weight: bold;
     text-decoration: underline;
-    border: 7px solid rgb(150, 68, 68);
+    border: 7px solid rgb(176, 62, 62);
 }
 
 /* images border and hover */
 img {
-    margin: 24px;
-    /* width: 325px; */
     border: 8px solid lavender;
-    padding: 10px;
     transition: .5s ease;
 }
 
@@ -168,8 +165,10 @@ p{
 .gallery{
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 30px;
     justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .gallery img {
@@ -186,6 +185,7 @@ p{
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+    margin-bottom: 100px;
 }
 
 .index_gal img {
@@ -331,91 +331,54 @@ input[type=submit]:hover {
 }
 
 /* Styles for flipcard */
-/* 
-.collaboreat_mockup {
-    background-color: transparent;
-    width: 300px;
-    height: 200px;
-    border: 1px solid #f1f1f1;
+
+.flipcard {
+    background-color: lavender;
+    width: 400px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
   }
 
-.c_mockup_inner {
+.flip_inner {
     position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
+    width: 400px;
+    height: 400px;
+    transition: transform 1s;
     transform-style: preserve-3d;
 }
 
-.collaboreat_mockup:hover .c_mockup_inner {
+.flipcard:hover .flip_inner, .flipcard:focus, .flipcard:focus-within .flip_inner {
     transform: rotateY(180deg);
 }
 
-.c_mockup_front, .c_mockup_back {
+.flip_front, .flip_back {
     position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden; 
+    width: 400px;
+    height: 400px;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
 
-.c_mockup_front {
+.flip_front {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     background-color: #bbb;
     color: black;
 }
 
-.c_mockup_back {
-    background-color: dodgerblue;
+.flip_back {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(176, 62, 62);
     color: white;
     transform: rotateY(180deg);
-} */
-
-/* Styles for flipcard 2 */
-/* 
-body {
-    background: #eee;
-  }
-
-  .c_mockup_inner {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
-
-    transition: transform 1s;
-    transform-style: preserve-3d;
-  }
-
-  .collaboreat_mockup:hover .c_mockup_inner {
-    transform: rotateY( 180deg ) ;
-    transition: transform 0.5s;
-  }
-
-  .collaboreat_mockup {
-    width: 400px;
-    height: 400px;
-    perspective: 500px;
-  }
-
-  .c_mockup_front,
-  .c_mockup_back {
-    height: 400px;
-    width: 400px;
-    background: white;
-    line-height: 300px;
-    color: #03446A;
-    text-align: center;
-    font-size: 60px;
-    border-radius: 5px;
-    backface-visibility: hidden;
-  }
-
-  .c_mockup_back {
-    background: #03446A;
-    color: white;
-    transform: rotateY( 180deg );
-  } */
+}
 
 
 @media only screen and (min-width:768px){
@@ -438,11 +401,11 @@ body {
 
 nav{
     width: 100%;
-    background-color: #a9bfdb;
+    background-color: rgb(208, 233, 242);
 }
 
 li{
-    background-color: #a9bfdb;
+    background-color: rgb(208, 233, 242);
 }
 
 .nav_links {
@@ -467,11 +430,11 @@ li{
 }
 
 nav{
-    background-color: #aed1bc;
+    background-color: lightyellow;
   }
 
 li{
-    background-color: #aed1bc;
+    background-color: lightyellow;
 }
 
 }
