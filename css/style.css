@@ -195,7 +195,7 @@ p{
     justify-self: center;
 }
 
-/* gallery for destination */
+/* gallery for destination and ff_rtk */
 /* grid */
 .uxfest_gal{
     display: grid;
@@ -388,6 +388,8 @@ input[type=submit]:hover {
     grid-template: 150px / auto auto;
     justify-content: center;
     gap: 30px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 .ff_gallery img{
     border: 6px dashed blueviolet;
@@ -396,6 +398,7 @@ input[type=submit]:hover {
 .uxfest_gal{
     display: grid;
     grid-template: 600px / auto auto auto;
+    column-gap: 30px;
     justify-content: center;
 }
 
@@ -417,13 +420,15 @@ li{
 
 }
 
-@media only screen and (min-width: 992px){
+@media only screen and (min-width: 1200px){
 
 .ff_gallery{
     display:grid;
     grid-template: 150px / auto auto auto;
     justify-content: center;
     gap: 30px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 .ff_gallery img{
     border: 8px ridge purple;
@@ -461,6 +466,10 @@ li{
 
 .flipcard:hover .flip_inner, .flipcard:focus, .flipcard:focus-within .flip_inner {
     transform: none;
+}
+
+.heading{
+    background-attachment: scroll;
 }
 
 }
