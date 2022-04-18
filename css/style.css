@@ -1,6 +1,4 @@
-@-ms-viewport{
-    width: device-width;
-}
+
 /* 1 checkpoint */
 
 /* nav */
@@ -38,7 +36,7 @@ nav li a {
 /* images border and hover */
 img {
     margin: 24px;
-    width: 325px;
+    /* width: 325px; */
     border: 8px solid lavender;
     padding: 10px;
     transition: .5s ease;
@@ -58,15 +56,6 @@ header{
     justify-content: center;
 }
 
-/* #logo{
-    border: none;
-    width: 150px;
-    align-self: center;
-} */
-
-/* #logo:hover{
-    border: none
-} */
 
 /* skip to main */
 a.skip{
@@ -114,7 +103,7 @@ footer{
     color: white;
 }
 
-/* summary for ux fest */
+/* summary and details style */
 details{
     border: 1px solid #aaa;
     border-radius: 4px;
@@ -168,7 +157,7 @@ p{
     font-weight: bold;
 }
 
-/* gallery for collaboreat/ff rtk */
+/* gallery for collaboreat */
 /* flex */
 
 #gallery{
@@ -184,8 +173,10 @@ p{
 }
 
 .gallery img {
-    object-fit: cover;
     justify-self: center;
+    object-fit: cover;
+    width: 500px;
+    height: 300px;
 }
 
 /* gallery for index */
@@ -259,18 +250,18 @@ p{
     #44107a 29%,
     #ff1361 67%,
     #fff800 100%
-  );
-  background-size: auto auto;
-  background-clip: border-box;
-  background-size: 200% auto;
-  color: #fff;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textclip 5s linear infinite;
-  display: inline-block;
-  font-size: 4em;
-  text-align: center;
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 5s linear infinite;
+    display: inline-block;
+    font-size: 4em;
+    padding: 50px 50px;
 }
 
 @keyframes textclip {
@@ -280,6 +271,10 @@ p{
 }
 
 /* styles for form */
+
+.contact_container{
+    margin: 50px;
+}
 
 legend{
     font-size: 125%;
@@ -335,6 +330,152 @@ input[type=submit]:hover {
     opacity: 0.8;
 }
 
+/* Styles for flipcard */
+/* 
+.collaboreat_mockup {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+  }
+
+.c_mockup_inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.collaboreat_mockup:hover .c_mockup_inner {
+    transform: rotateY(180deg);
+}
+
+.c_mockup_front, .c_mockup_back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+}
+
+.c_mockup_front {
+    background-color: #bbb;
+    color: black;
+}
+
+.c_mockup_back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+} */
+
+/* Styles for flipcard 2 */
+/* 
+body {
+    background: #eee;
+  }
+
+  .c_mockup_inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+
+    transition: transform 1s;
+    transform-style: preserve-3d;
+  }
+
+  .collaboreat_mockup:hover .c_mockup_inner {
+    transform: rotateY( 180deg ) ;
+    transition: transform 0.5s;
+  }
+
+  .collaboreat_mockup {
+    width: 400px;
+    height: 400px;
+    perspective: 500px;
+  }
+
+  .c_mockup_front,
+  .c_mockup_back {
+    height: 400px;
+    width: 400px;
+    background: white;
+    line-height: 300px;
+    color: #03446A;
+    text-align: center;
+    font-size: 60px;
+    border-radius: 5px;
+    backface-visibility: hidden;
+  }
+
+  .c_mockup_back {
+    background: #03446A;
+    color: white;
+    transform: rotateY( 180deg );
+  } */
+
+
+@media only screen and (min-width:768px){
+
+.ff_gallery{
+    display:grid;
+    grid-template: 150px / auto auto;
+    justify-content: center;
+    gap: 30px;
+}
+.ff_gallery img{
+    border: 6px dashed blueviolet;
+}
+
+.uxfest_gal{
+    display: grid;
+    grid-template: 600px / auto auto auto;
+    justify-content: center;
+}
+
+nav{
+    width: 100%;
+    background-color: #a9bfdb;
+}
+
+li{
+    background-color: #a9bfdb;
+}
+
+.nav_links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: flex-end;
+}
+
+}
+
+@media only screen and (min-width: 992px){
+
+.ff_gallery{
+    display:grid;
+    grid-template: 150px / auto auto auto;
+    justify-content: center;
+    gap: 30px;
+}
+.ff_gallery img{
+    border: 8px ridge purple;
+}
+
+nav{
+    background-color: #aed1bc;
+  }
+
+li{
+    background-color: #aed1bc;
+}
+
+}
+
 @media screen and (prefers-reduced-motion: reduce){
 
 .button{
@@ -345,7 +486,11 @@ input[type=submit]:hover {
     animation: none;
 }
 
+
+
+
 }
+
 
 /* RANDOM NOTES BELOW*/
 
